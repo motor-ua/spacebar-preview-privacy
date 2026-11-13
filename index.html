@@ -20,7 +20,7 @@
 </head>
 <body>
   <h1>Privacy Policy — Spacebar Preview</h1>
-  <p class="updated">Last updated: October 30, 2026</p>
+  <p class="updated">Last updated: November 13, 2026</p>
 
   <p>
     Spacebar Preview ("the app") is a Windows system tray utility that shows a
@@ -63,12 +63,11 @@
     PDF, video, audio, Markdown, HTML and Word documents are displayed with
     Microsoft Edge WebView2, a component of Windows. Scripts in previewed HTML,
     Markdown and office documents are disabled, and links you click open in
-    your default web browser. If a
-    previewed HTML or Markdown file itself refers to online content (for
-    example, an image hosted on a website), WebView2 may load that content from
-    the internet, just as a web browser would when opening the same file. The
-    app adds nothing to such requests. WebView2 is provided by Microsoft and is
-    covered by the
+    your default web browser. Previews work offline: if a previewed file refers
+    to online content (for example, an image hosted on a website), that content
+    is <strong>not</strong> loaded, and the SmartScreen reputation check of
+    WebView2 is turned off for previews. WebView2 is provided by Microsoft and
+    is covered by the
     <a href="https://www.microsoft.com/privacy/privacystatement">Microsoft Privacy Statement</a>.
   </p>
 
@@ -79,7 +78,10 @@
   <ul>
     <li>Settings: the selected theme and the preview window size.</li>
     <li>The WebView2 cache used to display previews.</li>
-    <li>Temporary files for previews of large documents, which are deleted automatically.</li>
+    <li>Temporary files for previews of large documents and e-books, which are deleted automatically.</li>
+    <li>An error log (up to about 1 MB) used to troubleshoot previews that fail to open. It records the
+        time, the app version, the file type (extension) and the error, never the file name or its
+        contents. It is not sent anywhere.</li>
   </ul>
   <p>
     All of this is removed when you uninstall the app.
